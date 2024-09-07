@@ -132,9 +132,11 @@ function App() {
     }
 
     function showMorePhotos() {
+        console.log("totalImg : " + totalImg);
         if (document.getElementById("p10").style.display !== "inline") {
             document.getElementById("smb").textContent = "닫기";
             for (let i = 10; i < totalImg+1; i++) {
+                console.log("for : " + totalImg);
                 document.getElementById("p"+i).style.display = "inline";
             }
             return

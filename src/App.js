@@ -192,7 +192,7 @@ function App() {
             <div className="GreetingImage">
                 <div className="animate__animated animate__fadeIn" style={{animationDuration: "4s"}}>
                     <Snowfall snowflakeCount={100} speed={[0.5, 1.5]} wind={[-0.5, 0.5]} radius={[0.5, 1.0]}/>
-                <img className="GreetingSnap" src="/img/_1.jpg"/>
+                <img className="GreetingSnap" src="/img/gate_1.mp4" type="video/mp4"/>
                 </div>
             </div>
             <div className="animate__animated animate__fadeIn" style={{animationDuration: "4s"}}>

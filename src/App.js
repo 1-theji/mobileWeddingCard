@@ -455,45 +455,27 @@ function App() {
                     <text className="TextArea">
                         <ScrollAnimation animateIn="fadeInUp" animateOnce={true}>
                         <text className="TransportationType">지 하 철</text><br/>
-                            <text className="ContentsTextArea">2호선 <u>역삼역 지하 연결</u><br/>
-                                <text className="ContentsDescTextArea">(<u>7번 출구 방향</u>에 GS타워 지하1층과 연결되어 있습니다.<br/>
-                                    GS타워 내에서 에스컬레이터로 올라오시면 됩니다.)<br/>
-                                </text>
+                            <text className="ContentsTextArea">2호선, 5호선 <u>영등포 구청역 하차</u><br/>
+                                <text className="ContentsDescTextArea">(<u>4번 출구 방향</u>(도보 3분)<br/></text>
                             </text>
-                            <img className="YeokSamStn" src="/img/yeoksam.jpg"/>
                         <br/><br/>
                         </ScrollAnimation>
                         <ScrollAnimation animateIn="fadeInUp" animateOnce={true}>
                         <text className="TransportationType" id="publicBus">버 스</text><br/>
-                            <text className="ContentsTextArea">147, 463, 3412, 4211, 9600 <text className="ContentsDescTextArea">(역삼역.GS타워)</text><br/>
-                                146, 242, 341, 360, 740 <br/>
+                            <text className="ContentsTextArea">영등포 경찰서, 영등포구청역 하차 후 도보 이용<br/>
+                                일반 : 5, 70-3 / 지선 : 5620, 6631, 6637 <br/>
+                                마을 : 영등포02, 12
                             </text>
-                            <text className="ContentsDescTextArea">(아가방빌딩.하나은행 or 한서병원)</text><br/><br/>
+                        <br/><br/>
                         </ScrollAnimation>
                         <ScrollAnimation animateIn="fadeInUp" animateOnce={true}>
                         <text className="TransportationType">자 가 용 (주 차)</text><br/>
-                            <text className="ContentsTextArea">건물 내 지하 주차장 <u>4시간 무료</u></text><br/>
-                            <text className="ContentsDescTextArea">(규모 약 <u>1,000대</u>)</text>
+                            <text className="ContentsTextArea">네이게이셔션 [서울 영등포구 당산동 3가 93-2]검색 </text><br/>
+                            <text className="ContentsTextArea">웨딩홀 지하 주차장 1, 2층 </text><br/>
+                            <text className="ContentsDescTextArea">웨딩홀 맞은편 공영주차장 이용 가능</text>
                         <br/><br/><br/>
                         </ScrollAnimation>
-                        <ScrollAnimation animateIn="fadeInUp" animateOnce={true}>
-                        <button id="TransportationSongdo" className="TransportationSongdo" onClick={ShowTransportationSongdo}>
-                            송도에서 오실 경우 ▼
-                        </button>
-                        </ScrollAnimation>
-                        <text id="TransportationDescSongdo" className="ContentsTextArea" style={{display: "none"}}>
-                            <div className="animate__animated animate__fadeIn" style={{lineHeight: "1.6"}}>
-                                <br/>M6405, 9201 버스 탑승
-                                <br/>→ 서초역 지하철 2호선 환승
-                                <br/>→ 역삼역 하차<br/><br/>
-                                <text className="AccountTitle">★ 셔틀버스 안내 ★</text><br/>
-                                *탑승 당일 사원증 지참해주세요<br/>
-                                *신부 하객 중 탑승 원하는 분은<br/>
-                                 신부에게 말씀해주세요
-
-
-                            </div>
-                        </text>
+                        
                     </text>
 
                 </div>
@@ -518,7 +500,7 @@ function App() {
                             <text className="AccountTitle">신랑 아버지 계좌번호</text><br/>
                             <text className="AccountInfoText">
                                 <CopyToClipboard className="CopyText" text={SeungHoonDadAccountNum} onCopy={() => textCopyAlert({SeungHoonDadAccountNum})}>
-                                    <text>{SeungHoonDadAccountNum}</text></CopyToClipboard>&nbsp;&nbsp;&nbsp;(아버님)
+                                    <text>{SeungHoonDadAccountNum}</text></CopyToClipboard>&nbsp;&nbsp;&nbsp;(지수흥)
                             </text>
                             <div className="AccountInfoBtn">
                                 <CopyToClipboard text={SeungHoonDadAccountNum} onCopy={() => textCopyAlert({SeungHoonDadAccountNum})}>
@@ -528,7 +510,7 @@ function App() {
                         <text className="AccountTitle">신부 어머니 계좌번호</text><br/>
                         <text className="AccountInfoText">
                             <CopyToClipboard className="CopyText" text={SeungHoonMonAccountNum} onCopy={() => textCopyAlert({SeungHoonMonAccountNum})}>
-                                <text>{SeungHoonMonAccountNum}</text></CopyToClipboard>&nbsp;&nbsp;&nbsp;(어무니)&nbsp;&nbsp;
+                                <text>{SeungHoonMonAccountNum}</text></CopyToClipboard>&nbsp;&nbsp;&nbsp;(하춘자)&nbsp;&nbsp;
                         </text>
                             <div className="AccountInfoBtn">
                                 <CopyToClipboard text={SeungHoonMonAccountNum} onCopy={() => textCopyAlert({SeungHoonMonAccountNum})}>
@@ -538,12 +520,12 @@ function App() {
                         <text className="AccountTitle">신랑 계좌번호</text><br/>
                         <text className="AccountInfoText">
                             <CopyToClipboard className="CopyText" text={SeungHoonAccountNum} onCopy={() => textCopyAlert({SeungHoonAccountNum})}>
-                                <text>{SeungHoonAccountNum}</text></CopyToClipboard>&nbsp;&nbsp;&nbsp;(정성래)
+                                <text>{SeungHoonAccountNum}</text></CopyToClipboard>&nbsp;&nbsp;&nbsp;(지승훈)
                         </text>
                             <div className="AccountInfoBtn">
                                 <CopyToClipboard text={SeungHoonAccountNum} onCopy={() => textCopyAlert({SeungHoonAccountNum})}>
                                     <img className="AccountCopyIcon" src="/img/acc_copy_button.png"/></CopyToClipboard>&nbsp;&nbsp;
-                                <a href="https://pay-home.kakao.com/talk/scheme/money/to/qr?qr_code= &chan= &is_intermediary=false">
+                                <a href="https://qr.kakaopay.com/Ej7sM1jSue">
                                     <img className="KakaoPayIcon" src="/img/kakaopay_button.png"/>
                                 </a>
                             </div>
@@ -563,7 +545,7 @@ function App() {
                             <text className="AccountTitle">신부 아버지 계좌번호</text><br/>
                         <text className="AccountInfoText">
                             <CopyToClipboard className="CopyText" text={oneCrystalDadstalAccountNum} onCopy={() => textCopyAlert({oneCrystalDadstalAccountNum})}>
-                                <text>{oneCrystalDadstalAccountNum}</text></CopyToClipboard>&nbsp;&nbsp;&nbsp;(아부지)
+                                <text>{oneCrystalDadstalAccountNum}</text></CopyToClipboard>&nbsp;&nbsp;&nbsp;(원종선)
                         </text>
                             <div className="AccountInfoBtn">
                                 <CopyToClipboard text={oneCrystalDadstalAccountNum} onCopy={() => textCopyAlert({oneCrystalDadstalAccountNum})}>
@@ -573,7 +555,7 @@ function App() {
                         <text className="AccountTitle">신부 어머니 계좌번호</text><br/>
                         <text className="AccountInfoText">
                             <CopyToClipboard className="CopyText" text={oneCrystalMomstalAccountNum} onCopy={() => textCopyAlert({oneCrystalMomstalAccountNum})}>
-                                <text>{oneCrystalMomstalAccountNum}</text></CopyToClipboard>&nbsp;&nbsp;&nbsp;(어무니)&nbsp;&nbsp;
+                                <text>{oneCrystalMomstalAccountNum}</text></CopyToClipboard>&nbsp;&nbsp;&nbsp;(김병순)&nbsp;&nbsp;
                         </text>
                             <div className="AccountInfoBtn">
                                 <CopyToClipboard text={oneCrystalMomstalAccountNum} onCopy={() => textCopyAlert({oneCrystalMomstalAccountNum})}>
@@ -583,7 +565,7 @@ function App() {
                         <text className="AccountTitle">신부 계좌번호</text><br/>
                         <text className="AccountInfoText">
                             <CopyToClipboard className="CopyText" text={oneCrystalAccountNum} onCopy={() => textCopyAlert({oneCrystalAccountNum})}>
-                                <text>{oneCrystalAccountNum}</text></CopyToClipboard>&nbsp;&nbsp;&nbsp;(이지수)&nbsp;&nbsp;
+                                <text>{oneCrystalAccountNum}</text></CopyToClipboard>&nbsp;&nbsp;&nbsp;(원수정)&nbsp;&nbsp;
                         </text>
                             <div className="AccountInfoBtn">
                                 <CopyToClipboard text={oneCrystalAccountNum} onCopy={() => textCopyAlert({oneCrystalAccountNum})}>
@@ -623,7 +605,7 @@ function App() {
                     <br/>
                     <ScrollAnimation animateIn="fadeInUp" animateOnce={true}>
                         <text className="TransportationType">Q. 밥이 맛있다던데..</text><br/>
-                        <text className="ContentsTextArea">A. 다양한 음식으로 구성된 뷔페로 준비했습니다. 마음껏 드세요!</text>
+                        <text className="ContentsTextArea">A. 다양한 음식으로 구성된 뷔페로 준비했습니다. <br/>마음껏 드세요!</text>
                     </ScrollAnimation>
                 </text>
 

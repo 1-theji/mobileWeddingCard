@@ -185,17 +185,10 @@ function App() {
 
 
     return (
-        <RenderAfterNavermapsLoaded
-            ncpClientId={"abcdefg123"}
-            error={<p>Maps Load Error</p>}
-            loading={<p>Maps Loading...</p>}
-        >
         <div>
-            <div className="GreetingImage">               
-                <video className="GreetingSnap"autoplay loop muted playsinline>
-                    <source src="/img/gate_1.mp4" type="video/mp4" ></source>
-                </video>            
-            </div>
+            <VideoBackground autoPlay loop muted playsInline={true}>
+                <source src="/img/gate_1.mp4" type="video/mp4" />
+            </VideoBackground>                        
             <div className="animate__animated animate__fadeIn" style={{animationDuration: "4s"}}>
                 <p style={{color: "#5B5454", fontSize: "19px", lineHeight: 1.6}}>
                     <br/>
@@ -729,7 +722,7 @@ function App() {
             </div>
 
         </div>
-        </RenderAfterNavermapsLoaded>
+        
     );
 }
 

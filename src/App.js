@@ -341,47 +341,47 @@ function App() {
                             <img className="Thumbnail" src="/img/IMG09.jpg" onClick={() => openImage(9)}/>
                         </div>
                     </div>
-                    <div id="p10" className="ThumbnailItem" style={{display: "none"}}>
+                    <div id="p10" className="ThumbnailItem">
                         <div className="ThumbnailWrapper">
                             <img className="Thumbnail" src="/img/IMG10.jpg" onClick={() => openImage(10)}/>
                         </div>
                     </div>
-                    <div id="p11" className="ThumbnailItem" style={{display: "none"}}>
+                    <div id="p11" className="ThumbnailItem">
                         <div className="ThumbnailWrapper">
                             <img className="Thumbnail" src="/img/IMG11.jpg" onClick={() => openImage(11)}/>
                         </div>
                     </div>
-                    <div id="p12" className="ThumbnailItem" style={{display: "none"}}>
+                    <div id="p12" className="ThumbnailItem">
                         <div className="ThumbnailWrapper">
                             <img className="Thumbnail" src="/img/IMG12.jpg" onClick={() => openImage(12)}/>
                         </div>
                     </div>
-                    <div id="p13" className="ThumbnailItem" style={{display: "none"}}>
+                    <div id="p13" className="ThumbnailItem">
                         <div className="ThumbnailWrapper">
                             <img className="Thumbnail" src="/img/IMG13.jpg" onClick={() => openImage(13)}/>
                         </div>
                     </div>
-                    <div id="p14" className="ThumbnailItem" style={{display: "none"}}>
+                    <div id="p14" className="ThumbnailItem">
                         <div className="ThumbnailWrapper">
                             <img className="Thumbnail" src="/img/IMG14.jpg" onClick={() => openImage(14)}/>
                         </div>
                     </div>
-                    <div id="p15" className="ThumbnailItem" style={{display: "none"}}>
+                    <div id="p15" className="ThumbnailItem">
                         <div className="ThumbnailWrapper">
                             <img className="Thumbnail" src="/img/IMG15.jpg" onClick={() => openImage(15)}/>
                         </div>
                     </div>
-                    <div id="p16" className="ThumbnailItem" style={{display: "none"}}>
+                    <div id="p16" className="ThumbnailItem">
                         <div className="ThumbnailWrapper">
                             <img className="Thumbnail" src="/img/IMG16.jpg" onClick={() => openImage(16)}/>
                         </div>
                     </div>
-                    <div id="p17" className="ThumbnailItem" style={{display: "none"}}>
+                    <div id="p17" className="ThumbnailItem">
                         <div className="ThumbnailWrapper">
                             <img className="Thumbnail" src="/img/IMG17.jpg" onClick={() => openImage(17)}/>
                         </div>
                     </div>
-                    <div id="p18" className="ThumbnailItem" style={{display: "none"}}>
+                    <div id="p18" className="ThumbnailItem">
                         <div className="ThumbnailWrapper">
                             <img className="Thumbnail" src="/img/IMG18.jpg" onClick={() => openImage(18)}/>
                         </div>

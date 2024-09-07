@@ -135,14 +135,14 @@ function App() {
         console.log("totalImg : " + totalImg);
         if (document.getElementById("p10").style.display !== "inline") {
             document.getElementById("smb").textContent = "닫기";
-            for (let i = 10; i < totalImg+1; i++) {
+            for (let i = 10; i < totalImg+i; i++) {
                 console.log("for : " + totalImg);
                 document.getElementById("p"+i).style.display = "inline";
             }
             return
         } else {
             document.getElementById("smb").textContent = "더보기";
-            for (let i = 10; i < totalImg+1; i++) {
+            for (let i = 10; i < totalImg+i; i++) {
                 document.getElementById("p"+i).style.display = "none";
             }
             handleClickScrollGallery();
@@ -194,7 +194,7 @@ function App() {
             <div className="GreetingImage">
                 <div className="animate__animated animate__fadeIn" style={{animationDuration: "4s"}}>
                     <Snowfall snowflakeCount={100} speed={[0.5, 1.5]} wind={[-0.5, 0.5]} radius={[0.5, 1.0]}/>
-                <img className="GreetingSnap" src="/img/gate_1.mp4" type="video/mp4"/>
+                <<video className="GreetingSnap" src="/img/gate_1.mp4" type="video/mp4" autoplay muted loop controls/>
                 </div>
             </div>
             <div className="animate__animated animate__fadeIn" style={{animationDuration: "4s"}}>

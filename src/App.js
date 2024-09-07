@@ -646,78 +646,78 @@ function App() {
                 </div>
                 <div className="ImageSlide">
                     <div className="ImageSlideItem">
-                        <img id="i1" className="Image" src="/img/img1.jpg"
+                        <img id="i1" className="Image" src="/img/IMG01.jpg"
                              onTouchStart={(event) => handleTouchStart(event)}
                              onTouchMove={(event) => handleTouchMove(event)}
                              onTouchEnd={() => handleTouchEnd(1)}/>
-                        <img id="i2" className="Image" src="/img/img2.jpg"
+                        <img id="i2" className="Image" src="/img/IMG02.jpg"
                              onTouchStart={(event) => handleTouchStart(event)}
                              onTouchMove={(event) => handleTouchMove(event)}
                              onTouchEnd={() => handleTouchEnd(2)}/>
-                        <img id="i3" className="Image" src="/img/img3.jpg"
+                        <img id="i3" className="Image" src="/img/IMG03.jpg"
                              onTouchStart={(event) => handleTouchStart(event)}
                              onTouchMove={(event) => handleTouchMove(event)}
                              onTouchEnd={() => handleTouchEnd(3)}/>
-                        <img id="i4" className="Image" src="/img/img4.jpg"
+                        <img id="i4" className="Image" src="/img/IMG04.jpg"
                              onTouchStart={(event) => handleTouchStart(event)}
                              onTouchMove={(event) => handleTouchMove(event)}
                              onTouchEnd={() => handleTouchEnd(4)}/>
-                        <img id="i5" className="Image" src="/img/img5.jpg"
+                        <img id="i5" className="Image" src="/img/IMG05.jpg"
                              onTouchStart={(event) => handleTouchStart(event)}
                              onTouchMove={(event) => handleTouchMove(event)}
                              onTouchEnd={() => handleTouchEnd(5)}/>
-                        <img id="i6" className="Image" src="/img/img6.jpg"
+                        <img id="i6" className="Image" src="/img/IMG06.jpg"
                              onTouchStart={(event) => handleTouchStart(event)}
                              onTouchMove={(event) => handleTouchMove(event)}
                              onTouchEnd={() => handleTouchEnd(6)}/>
-                        <img id="i7" className="Image" src="/img/img7.jpg"
+                        <img id="i7" className="Image" src="/img/IMG07.jpg"
                              onTouchStart={(event) => handleTouchStart(event)}
                              onTouchMove={(event) => handleTouchMove(event)}
                              onTouchEnd={() => handleTouchEnd(7)}/>
-                        <img id="i8" className="Image" src="/img/img8.jpg"
+                        <img id="i8" className="Image" src="/img/IMG08.jpg"
                              onTouchStart={(event) => handleTouchStart(event)}
                              onTouchMove={(event) => handleTouchMove(event)}
                              onTouchEnd={() => handleTouchEnd(8)}/>
-                        <img id="i9" className="Image" src="/img/img9.jpg"
+                        <img id="i9" className="Image" src="/img/IMG09.jpg"
                              onTouchStart={(event) => handleTouchStart(event)}
                              onTouchMove={(event) => handleTouchMove(event)}
                              onTouchEnd={() => handleTouchEnd(9)}/>
-                        <img id="i10" className="Image" src="/img/img10.jpg"
+                        <img id="i10" className="Image" src="/img/IMG10.jpg"
                              onTouchStart={(event) => handleTouchStart(event)}
                              onTouchMove={(event) => handleTouchMove(event)}
                              onTouchEnd={() => handleTouchEnd(10)}/>
-                        <img id="i11" className="Image" src="/img/img11.jpg"
+                        <img id="i11" className="Image" src="/img/IMG11.jpg"
                              onTouchStart={(event) => handleTouchStart(event)}
                              onTouchMove={(event) => handleTouchMove(event)}
-                             onTouchEnd={() => handleTouchEnd(10)}/>
-                        <img id="i12" className="Image" src="/img/img12.jpg"
+                             onTouchEnd={() => handleTouchEnd(11)}/>
+                        <img id="i12" className="Image" src="/img/IMG12.jpg"
                              onTouchStart={(event) => handleTouchStart(event)}
                              onTouchMove={(event) => handleTouchMove(event)}
-                             onTouchEnd={() => handleTouchEnd(10)}/>
-                        <img id="i13" className="Image" src="/img/img13.jpg"
+                             onTouchEnd={() => handleTouchEnd(12)}/>
+                        <img id="i13" className="Image" src="/img/IMG13.jpg"
                              onTouchStart={(event) => handleTouchStart(event)}
                              onTouchMove={(event) => handleTouchMove(event)}
-                             onTouchEnd={() => handleTouchEnd(10)}/>
-                        <img id="i14" className="Image" src="/img/img14.jpg"
+                             onTouchEnd={() => handleTouchEnd(13)}/>
+                        <img id="i14" className="Image" src="/img/IMG14.jpg"
                              onTouchStart={(event) => handleTouchStart(event)}
                              onTouchMove={(event) => handleTouchMove(event)}
-                             onTouchEnd={() => handleTouchEnd(10)}/>
-                        <img id="i15" className="Image" src="/img/img15.jpg"
+                             onTouchEnd={() => handleTouchEnd(14)}/>
+                        <img id="i15" className="Image" src="/img/IMG15.jpg"
                              onTouchStart={(event) => handleTouchStart(event)}
                              onTouchMove={(event) => handleTouchMove(event)}
-                             onTouchEnd={() => handleTouchEnd(10)}/>
-                        <img id="i16" className="Image" src="/img/img16.jpg"
+                             onTouchEnd={() => handleTouchEnd(15)}/>
+                        <img id="i16" className="Image" src="/img/IMG16.jpg"
                              onTouchStart={(event) => handleTouchStart(event)}
                              onTouchMove={(event) => handleTouchMove(event)}
-                             onTouchEnd={() => handleTouchEnd(10)}/>
-                        <img id="i17" className="Image" src="/img/img17.jpg"
+                             onTouchEnd={() => handleTouchEnd(16)}/>
+                        <img id="i17" className="Image" src="/img/IMG17.jpg"
                              onTouchStart={(event) => handleTouchStart(event)}
                              onTouchMove={(event) => handleTouchMove(event)}
-                             onTouchEnd={() => handleTouchEnd(10)}/>
-                        <img id="i18" className="Image" src="/img/img18.jpg"
+                             onTouchEnd={() => handleTouchEnd(17)}/>
+                        <img id="i18" className="Image" src="/img/IMG18.jpg"
                              onTouchStart={(event) => handleTouchStart(event)}
                              onTouchMove={(event) => handleTouchMove(event)}
-                             onTouchEnd={() => handleTouchEnd(10)}/>                              
+                             onTouchEnd={() => handleTouchEnd(18)}/>                              
                              
                     </div>
                 </div>

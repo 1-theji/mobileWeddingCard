@@ -192,7 +192,9 @@ function App() {
         >
         <div>
             <div className="GreetingImage">               
-                <video className="GreetingSnap" src="/img/gate_1.mp4" type="video/mp4" autoplay loop muted playsinline/>            
+                <video className="GreetingSnap"autoplay loop muted playsinline>
+                    <source src="/img/gate_1.mp4" type="video/mp4" ></source>
+                </video>            
             </div>
             <div className="animate__animated animate__fadeIn" style={{animationDuration: "4s"}}>
                 <p style={{color: "#5B5454", fontSize: "19px", lineHeight: 1.6}}>

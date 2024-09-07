@@ -188,13 +188,13 @@ function App() {
     return (
         
         <RenderAfterNavermapsLoaded
-            ncpClientId={"abcdefg123"}
+            ncpClientId={"14sw7vmr2u"}
             error={<p>Maps Load Error</p>}
             loading={<p>Maps Loading...</p>}
         >
         <div>
             <div className="GreetingImage">               
-                <video className="GreetingSnap"autoplay loop muted playsinline>
+                <video className="GreetingSnap"autoplay loop muted playsinline controls>
                     <source src="/img/gate_1.mp4" type="video/mp4" ></source>
                 </video>            
             </div>

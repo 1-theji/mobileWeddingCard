@@ -3,9 +3,15 @@ import React, {useEffect} from "react";
 import {RenderAfterNavermapsLoaded, NaverMap, Marker} from 'react-naver-maps';
 import {CopyToClipboard} from "react-copy-to-clipboard/src";
 import KakaoShareButton from "./kakao/share";
+import styled from "styled-components";
 import ScrollAnimation from 'react-animate-on-scroll';
 import 'animate.css';
 import Snowfall from 'react-snowfall';
+
+const VideoBackground = styled.video`
+  width: 100%;
+`;
+
 
 function App() {
     let selectedImg = 1;
@@ -421,9 +427,9 @@ function App() {
 
                     <text className="TextArea"><br/>
                         <ScrollAnimation animateIn="fadeInUp" animateOnce={true}>
-                            <b>아모리스 역삼</b><br/>
-                            서울 강남구 논현로 508 GS타워 1층 (단독홀)<br/>
-                            <text className="ContentsDescTextArea">(tel) 02-2005-1010</text><br/>
+                            <b>더컨벤션영등포, 2층 다이너스홀</b><br/>
+                            서울 영등포구 국회대로38길 2, 2층 (다이너스홀)<br/>
+                            <text className="ContentsDescTextArea">(tel) 02-6426-5000</text><br/>
                         </ScrollAnimation>
                     </text>
                 </div>
@@ -432,11 +438,11 @@ function App() {
                         <NaverMap
                             mapDivId={"map"}
                             style={{ width: '100%', height: '35vh'}}
-                            defaultCenter={{ lat: 37.501859, lng: 127.037276 }}
+                            defaultCenter={{ lat: 37.5267024, lng: 126.8987777 }}
                             defaultZoom={15}>
                             <Marker
                                 key={1}
-                                position={{ lat: 37.501859, lng: 127.037276 }}
+                                position={{ lat: 37.5267024, lng: 126.8987777 }}
                                 infoWindow={{content: "아모리스"}}
                                 animation={2} />
                         </NaverMap>

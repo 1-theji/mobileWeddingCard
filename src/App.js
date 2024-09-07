@@ -191,11 +191,8 @@ function App() {
             loading={<p>Maps Loading...</p>}
         >
         <div>
-            <div className="GreetingImage">
-                <VideoBackground autoPlay loop muted playsInline={true}>
-                    <source src="/img/gate_1.mp4" type="video/mp4" />
-                </VideoBackground>    
-                </div>
+            <div className="GreetingImage">               
+                <video className="GreetingSnap" src="/img/gate_1.mp4" type="video/mp4" autoplay loop muted playsinline/>            
             </div>
             <div className="animate__animated animate__fadeIn" style={{animationDuration: "4s"}}>
                 <p style={{color: "#5B5454", fontSize: "19px", lineHeight: 1.6}}>

@@ -171,20 +171,6 @@ function App() {
         }
     }
 
-    function ShowTransportationSongdo() {
-        if (document.getElementById("TransportationDescSongdo").style.display !== "inline") {
-            document.getElementById("TransportationSongdo").textContent = "송도에서 오실 경우 ▲";
-            document.getElementById("TransportationDescSongdo").style.display = "inline";
-            return
-        } else {
-            document.getElementById("TransportationSongdo").textContent = "송도에서 오실 경우 ▼";
-            document.getElementById("TransportationDescSongdo").style.display = "none";
-            handleClickScrollSongdo();
-            return
-        }
-    }
-
-
     return (
         
         <RenderAfterNavermapsLoaded
@@ -194,7 +180,7 @@ function App() {
         >
         <div>
             <div className="GreetingImage">               
-                <video className="GreetingSnap"autoplay loop muted playsinline controls>
+                <video className="GreetingSnap" autoPlay loop muted playsInline controls>
                     <source src="/img/gate_1.mp4" type="video/mp4" ></source>
                 </video>            
             </div>
@@ -446,7 +432,7 @@ function App() {
                             <Marker
                                 key={1}
                                 position={{ lat: 37.5267024, lng: 126.8987777 }}
-                                infoWindow={{content: "아모리스"}}
+                                infoWindow={{content: "더컨벤션 영등포"}}
                                 animation={2} />
                         </NaverMap>
                     </div>

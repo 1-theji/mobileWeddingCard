@@ -3,14 +3,9 @@ import React, {useEffect} from "react";
 import {RenderAfterNavermapsLoaded, NaverMap, Marker} from 'react-naver-maps';
 import {CopyToClipboard} from "react-copy-to-clipboard/src";
 import KakaoShareButton from "./kakao/share";
-import styled from "styled-components";
 import ScrollAnimation from 'react-animate-on-scroll';
 import 'animate.css';
 import Snowfall from 'react-snowfall';
-
-const VideoBackground = styled.video`
-  width: 100%;
-`;
 
 
 function App() {
@@ -191,10 +186,18 @@ function App() {
 
 
     return (
+        
+        <RenderAfterNavermapsLoaded
+            ncpClientId={"abcdefg123"}
+            error={<p>Maps Load Error</p>}
+            loading={<p>Maps Loading...</p>}
+        >
         <div>
-            <VideoBackground autoPlay loop muted playsInline={true}>
-                <source src="/img/gate_1.mp4" type="video/mp4" />
-            </VideoBackground>                        
+            <div className="GreetingImage">               
+                <video className="GreetingSnap"autoplay loop muted playsinline>
+                    <source src="/img/gate_1.mp4" type="video/mp4" ></source>
+                </video>            
+            </div>
             <div className="animate__animated animate__fadeIn" style={{animationDuration: "4s"}}>
                 <p style={{color: "#5B5454", fontSize: "19px", lineHeight: 1.6}}>
                     <br/>
@@ -728,7 +731,7 @@ function App() {
             </div>
 
         </div>
-        
+        </RenderAfterNavermapsLoaded>
     );
 }
 

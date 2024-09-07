@@ -10,11 +10,12 @@ import Snowfall from 'react-snowfall';
 function App() {
     let selectedImg = 1;
     const totalImg = 10;
-    const groomAccountNum = "신한 111-111-111111";
-    const groomDadAccountNum = "농협 111-11-111111";
-    const brideAccountNum = "하나 111-111111-11111";
-    const brideDadAccountNum = "하나 111-111111-11111";
-    const brideMomAccountNum = "국민 111-11-1111-111";
+    const SeungHoonAccountNum = "신한 110-328-002457";
+    const SeungHoonDadAccountNum = "농협 111-11-111111";
+    const SeungHoonMonAccountNum ="하나 123-123-123123"
+    const oneCrystalAccountNum = "국민 93294-0627-60";
+    const oneCrystalDadstalAccountNum = "하나 111-111111-11111";
+    const oneCrystalMomstalAccountNum = "신한 111-11-1111-111";
 
     const [touchStartX, setTouchStartX] = React.useState(0);
     const [touchStartY, setTouchStartY] = React.useState(0);
@@ -84,16 +85,18 @@ function App() {
 
     function textCopyAlert(text) {
         var copyText = "";
-        if (text['brideAccountNum']) {
-            copyText = JSON.stringify(text['brideAccountNum']);
-        } else if (text['brideDadAccountNum']) {
-            copyText = JSON.stringify(text['brideDadAccountNum']);
-        } else if (text['brideMomAccountNum']) {
-            copyText = JSON.stringify(text['brideMomAccountNum']);
-        } else if (text['groomAccountNum']) {
-            copyText = JSON.stringify(text['groomAccountNum']);
-        } else if (text['groomDadAccountNum']) {
-            copyText = JSON.stringify(text['groomDadAccountNum']);
+        if (text['oneCrystalAccountNum']) {
+            copyText = JSON.stringify(text['oneCrystalAccountNum']);
+        } else if (text['oneCrystalDadstalAccountNum']) {
+            copyText = JSON.stringify(text['oneCrystalDadstalAccountNum']);
+        } else if (text['oneCrystalMomstalAccountNum']) {
+            copyText = JSON.stringify(text['oneCrystalMomstalAccountNum']);
+        } else if (text['SeungHoonAccountNum']) {
+            copyText = JSON.stringify(text['SeungHoonAccountNum']);
+        } else if (text['SeungHoonDadAccountNum']) {
+            copyText = JSON.stringify(text['SeungHoonDadAccountNum']);
+        } else if (text['SeungHoonMonAccountNum']) {
+            copyText = JSON.stringify(text['SeungHoonMonAccountNum'])
         }
         alert(copyText + ' 클립보드에 복사되었습니다 :)');
     }
@@ -189,36 +192,37 @@ function App() {
             <div className="GreetingImage">
                 <div className="animate__animated animate__fadeIn" style={{animationDuration: "4s"}}>
                     <Snowfall snowflakeCount={100} speed={[0.5, 1.5]} wind={[-0.5, 0.5]} radius={[0.5, 1.0]}/>
-                <img className="GreetingSnap" src="/img/gate.jpg"/>
+                <img className="GreetingSnap" src="/img/_1.jpg"/>
                 </div>
             </div>
             <div className="animate__animated animate__fadeIn" style={{animationDuration: "4s"}}>
                 <p style={{color: "#5B5454", fontSize: "19px", lineHeight: 1.6}}>
                     <br/>
-                    2023년 2월 4일 토요일 오전 11:30<br/>
-                    아모리스 역삼<br/><br/>
+                    2024년 11월 16일 토요일 오후 01:40<br/>
+                    더컨벤션 영등포, 2층 다이너스홀<br/><br/>
                 </p>
             </div>
             <div className="GreetingMessage">
                 <ScrollAnimation animateIn="fadeIn">
                     <img className="FlowerIcon" src="/img/icon_flower.png"/>
-                    <p style={{color: "#FAFAF9", fontSize: "25px"}}>성래 & 지수 결혼합니다</p><br/>
+                    <p style={{color: "#FAFAF9", fontSize: "25px"}}>승훈 & 수정 결혼합니다</p><br/>
                 </ScrollAnimation>
                 <text className="TextArea">
                     <ScrollAnimation animateIn="fadeIn">
-                        10년이라는 긴 시간을 건너<br/>
-                        서로의 마음이 닿게 되었습니다.<br/><br/>
+                        서로 마주 보며 다져온 사람을<br/>
+                        이제 함께 한곳을 바라보며 걸어갈 수 있는<br/>
+                        큰 사랑으로 키우고자 합니다<br/><br/>
                     </ScrollAnimation>
                     <ScrollAnimation animateIn="fadeIn">
-                        봄이 시작되는 날,<br/>
-                        둘이서 함께하는 첫 걸음을 내딛으려 합니다.<br/>
+                        저희 두 사람이 사랑의 이름으로 지켜나갈 수 있게<br/>
+                        앞날을 축복해 주시면 감사하겠습니다.<br/>
                         귀한 발걸음 내어 축복해주신다면<br/>
                         더 없는 기쁨으로 간직하겠습니다.<br/>
                     </ScrollAnimation>
                     <br/><br/>
                     <ScrollAnimation animateIn="fadeIn">
-                        아버님. 어머님 <text className="SonDaughter">의&nbsp;&nbsp;아들</text>&nbsp;성래<br/>
-                        아부지. 어무니 <text className="SonDaughter">의&nbsp;&nbsp;<text className="Daughter">딸</text></text>&nbsp;지수
+                        지수흥. 하춘자 <text className="SonDaughter">의&nbsp;&nbsp;아들</text>&nbsp;승훈<br/>
+                        원종선. 김병순 <text className="SonDaughter">의&nbsp;&nbsp;<text className="Daughter">딸</text></text>&nbsp;수정
                     </ScrollAnimation>
                 </text>
             </div>
@@ -229,29 +233,29 @@ function App() {
                     <text className="TextArea">
                     <div className="GroomTable">
                         <div className="GroomContact">
-                            정 성 래<br/>
-                            <a href="tel:01000000000"><img className="CallIcon" src="/img/call_button.png"/></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            <a href="sms:01000000000"><img className="SmsIcon" src="/img/sms_button.png"/></a><br/>
+                            지 승 훈<br/>
+                            <a href="tel:01045388690"><img className="CallIcon" src="/img/call_button.png"/></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="sms:01045388690"><img className="SmsIcon" src="/img/sms_button.png"/></a><br/>
                             <br/><br/>
                         </div>
                         <div className="GroomDadContact">
                             <text className="ContactParentsText">
-                            신랑 아버지&nbsp;&nbsp;아 버 님<br/>
-                                <a href="tel:01000000000">
+                            신랑 아버지&nbsp;&nbsp;지 수 흥<br/>
+                                <a href="tel:01030111006">
                                     <img className="CallIcon" src="/img/call_button_icon.png" style={{verticalAlign: "top", height: "30px"}}/>
                                 </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                <a href="sms:01000000000">
+                                <a href="sms:01030111006">
                                     <img className="SmsIcon" src="/img/sms_button_icon.png" style={{verticalAlign: "top", height: "30px"}}/>
                                 </a>
                                 <br/><br/></text>
                         </div>
                         <div className="GroomMomContact">
                             <text className="ContactParentsText">
-                            신랑 어머니&nbsp;&nbsp;어 머 님<br/>
-                                <a href="tel:01000000000">
+                            신랑 어머니&nbsp;&nbsp;하 춘 자<br/>
+                                <a href="tel:01038481005">
                                     <img className="CallIcon" src="/img/call_button_icon.png" style={{verticalAlign: "top", height: "30px"}}/>
                                 </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                <a href="sms:01000000000">
+                                <a href="sms:01038481005">
                                     <img className="SmsIcon" src="/img/sms_button_icon.png" style={{verticalAlign: "top", height: "30px"}}/>
                                 </a><br/>
                                 <br/></text>
@@ -259,29 +263,29 @@ function App() {
                     </div>
                     <div className="BrideTable">
                         <div className="BrideContact">
-                            이 지 수<br/>
-                            <a href="tel:01000000000"><img className="CallIcon" src="/img/call_button.png"/></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            <a href="sms:01000000000"><img className="SmsIcon" src="/img/sms_button.png"/></a><br/>
+                            원 수 정<br/>
+                            <a href="tel:01032940627"><img className="CallIcon" src="/img/call_button.png"/></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="sms:01032940627"><img className="SmsIcon" src="/img/sms_button.png"/></a><br/>
                             <br/><br/>
                         </div>
                         <div className="BrideDadContact">
                             <text className="ContactParentsText">
-                                신부 아버지&nbsp;&nbsp;아 부 지<br/>
-                                <a href="tel:01000000000">
+                                신부 아버지&nbsp;&nbsp;원 종 선<br/>
+                                <a href="tel:01032080627">
                                     <img className="CallIcon" src="/img/call_button_icon.png" style={{verticalAlign: "top", height: "30px"}}/>
                                 </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                <a href="sms:01000000000">
+                                <a href="sms:01032080627">
                                     <img className="SmsIcon" src="/img/sms_button_icon.png" style={{verticalAlign: "top", height: "30px"}}/>
                                 </a>
                                 <br/><br/></text>
                         </div>
                         <div className="BrideMomContact">
                             <text className="ContactParentsText">
-                                신부 어머니&nbsp;&nbsp;어 무 니<br/>
-                                <a href="tel:01000000000">
+                                신부 어머니&nbsp;&nbsp;김 병 순<br/>
+                                <a href="tel:01022210627">
                                     <img className="CallIcon" src="/img/call_button_icon.png" style={{verticalAlign: "top", height: "30px"}}/>
                                 </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                <a href="sms:01000000000">
+                                <a href="sms:01022210627">
                                     <img className="SmsIcon" src="/img/sms_button_icon.png" style={{verticalAlign: "top", height: "30px"}}/>
                                 </a><br/>
                                 <br/></text>
@@ -305,52 +309,92 @@ function App() {
                 <div className="ThumbnailTable">
                     <div id="p1" className="ThumbnailItem">
                         <div className="ThumbnailWrapper">
-                            <img className="Thumbnail" src={"/img/thumbnail1.png"} onClick={() => openImage(1)}/>
+                            <img className="Thumbnail" src={"/img/IMG1.png"} onClick={() => openImage(1)}/>
                         </div>
                     </div>
                     <div id="p2" className="ThumbnailItem">
                         <div className="ThumbnailWrapper">
-                            <img className="Thumbnail" src="/img/thumbnail2.png" onClick={() => openImage(2)}/>
+                            <img className="Thumbnail" src="/img/IMG2.png" onClick={() => openImage(2)}/>
                         </div>
                     </div>
                     <div id="p3" className="ThumbnailItem">
                         <div className="ThumbnailWrapper">
-                            <img className="Thumbnail" src="/img/thumbnail3.png" onClick={() => openImage(3)}/>
+                            <img className="Thumbnail" src="/img/IMG3.png" onClick={() => openImage(3)}/>
                         </div>
                     </div>
                     <div id="p4" className="ThumbnailItem">
                         <div className="ThumbnailWrapper">
-                            <img className="Thumbnail" src="/img/thumbnail4.png" onClick={() => openImage(4)}/>
+                            <img className="Thumbnail" src="/img/IMG4.png" onClick={() => openImage(4)}/>
                         </div>
                     </div>
                     <div id="p5" className="ThumbnailItem">
                         <div className="ThumbnailWrapper">
-                            <img className="Thumbnail" src="/img/thumbnail5.png" onClick={() => openImage(5)}/>
+                            <img className="Thumbnail" src="/img/IMG5.png" onClick={() => openImage(5)}/>
                         </div>
                     </div>
                     <div id="p6" className="ThumbnailItem">
                         <div className="ThumbnailWrapper">
-                            <img className="Thumbnail" src="/img/thumbnail6.png" onClick={() => openImage(6)}/>
+                            <img className="Thumbnail" src="/img/IMG6.png" onClick={() => openImage(6)}/>
                         </div>
                     </div>
                     <div id="p7" className="ThumbnailItem">
                         <div className="ThumbnailWrapper">
-                            <img className="Thumbnail" src="/img/thumbnail7.png" onClick={() => openImage(7)}/>
+                            <img className="Thumbnail" src="/img/IMG7.png" onClick={() => openImage(7)}/>
                         </div>
                     </div>
                     <div id="p8" className="ThumbnailItem">
                         <div className="ThumbnailWrapper">
-                            <img className="Thumbnail" src="/img/thumbnail8.png" onClick={() => openImage(8)}/>
+                            <img className="Thumbnail" src="/img/IMG8.png" onClick={() => openImage(8)}/>
                         </div>
                     </div>
                     <div id="p9" className="ThumbnailItem">
                         <div className="ThumbnailWrapper">
-                            <img className="Thumbnail" src="/img/thumbnail9.png" onClick={() => openImage(9)}/>
+                            <img className="Thumbnail" src="/img/IMG9.png" onClick={() => openImage(9)}/>
                         </div>
                     </div>
                     <div id="p10" className="ThumbnailItem" style={{display: "none"}}>
                         <div className="ThumbnailWrapper">
-                            <img className="Thumbnail" src="/img/thumbnail10.png" onClick={() => openImage(10)}/>
+                            <img className="Thumbnail" src="/img/IMG10.png" onClick={() => openImage(10)}/>
+                        </div>
+                    </div>
+                    <div id="p11" className="ThumbnailItem" style={{display: "none"}}>
+                        <div className="ThumbnailWrapper">
+                            <img className="Thumbnail" src="/img/IMG11.png" onClick={() => openImage(10)}/>
+                        </div>
+                    </div>
+                    <div id="p12" className="ThumbnailItem" style={{display: "none"}}>
+                        <div className="ThumbnailWrapper">
+                            <img className="Thumbnail" src="/img/IMG12.png" onClick={() => openImage(10)}/>
+                        </div>
+                    </div>
+                    <div id="p13" className="ThumbnailItem" style={{display: "none"}}>
+                        <div className="ThumbnailWrapper">
+                            <img className="Thumbnail" src="/img/IMG13.png" onClick={() => openImage(10)}/>
+                        </div>
+                    </div>
+                    <div id="p14" className="ThumbnailItem" style={{display: "none"}}>
+                        <div className="ThumbnailWrapper">
+                            <img className="Thumbnail" src="/img/IMG14.png" onClick={() => openImage(10)}/>
+                        </div>
+                    </div>
+                    <div id="p15" className="ThumbnailItem" style={{display: "none"}}>
+                        <div className="ThumbnailWrapper">
+                            <img className="Thumbnail" src="/img/IMG15.png" onClick={() => openImage(10)}/>
+                        </div>
+                    </div>
+                    <div id="p16" className="ThumbnailItem" style={{display: "none"}}>
+                        <div className="ThumbnailWrapper">
+                            <img className="Thumbnail" src="/img/IMG16.png" onClick={() => openImage(10)}/>
+                        </div>
+                    </div>
+                    <div id="p17" className="ThumbnailItem" style={{display: "none"}}>
+                        <div className="ThumbnailWrapper">
+                            <img className="Thumbnail" src="/img/IMG17.png" onClick={() => openImage(10)}/>
+                        </div>
+                    </div>
+                    <div id="p18" className="ThumbnailItem" style={{display: "none"}}>
+                        <div className="ThumbnailWrapper">
+                            <img className="Thumbnail" src="/img/IMG18.png" onClick={() => openImage(10)}/>
                         </div>
                     </div>
                 </div>
@@ -470,21 +514,31 @@ function App() {
                         <div className="animate__animated animate__fadeIn">
                             <text className="AccountTitle">신랑 아버지 계좌번호</text><br/>
                             <text className="AccountInfoText">
-                                <CopyToClipboard className="CopyText" text={groomDadAccountNum} onCopy={() => textCopyAlert({groomDadAccountNum})}>
-                                    <text>{groomDadAccountNum}</text></CopyToClipboard>&nbsp;&nbsp;&nbsp;(아버님)
+                                <CopyToClipboard className="CopyText" text={SeungHoonDadAccountNum} onCopy={() => textCopyAlert({SeungHoonDadAccountNum})}>
+                                    <text>{SeungHoonDadAccountNum}</text></CopyToClipboard>&nbsp;&nbsp;&nbsp;(아버님)
                             </text>
                             <div className="AccountInfoBtn">
-                                <CopyToClipboard text={groomDadAccountNum} onCopy={() => textCopyAlert({groomDadAccountNum})}>
+                                <CopyToClipboard text={SeungHoonDadAccountNum} onCopy={() => textCopyAlert({SeungHoonDadAccountNum})}>
+                                    <img className="AccountCopyIcon" src="/img/acc_copy_button.png"/></CopyToClipboard>
+                            </div>
+                        <br/>
+                        <text className="AccountTitle">신부 어머니 계좌번호</text><br/>
+                        <text className="AccountInfoText">
+                            <CopyToClipboard className="CopyText" text={SeungHoonMonAccountNum} onCopy={() => textCopyAlert({SeungHoonMonAccountNum})}>
+                                <text>{SeungHoonMonAccountNum}</text></CopyToClipboard>&nbsp;&nbsp;&nbsp;(어무니)&nbsp;&nbsp;
+                        </text>
+                            <div className="AccountInfoBtn">
+                                <CopyToClipboard text={SeungHoonMonAccountNum} onCopy={() => textCopyAlert({SeungHoonMonAccountNum})}>
                                     <img className="AccountCopyIcon" src="/img/acc_copy_button.png"/></CopyToClipboard>
                             </div>
                         <br/>
                         <text className="AccountTitle">신랑 계좌번호</text><br/>
                         <text className="AccountInfoText">
-                            <CopyToClipboard className="CopyText" text={groomAccountNum} onCopy={() => textCopyAlert({groomAccountNum})}>
-                                <text>{groomAccountNum}</text></CopyToClipboard>&nbsp;&nbsp;&nbsp;(정성래)
+                            <CopyToClipboard className="CopyText" text={SeungHoonAccountNum} onCopy={() => textCopyAlert({SeungHoonAccountNum})}>
+                                <text>{SeungHoonAccountNum}</text></CopyToClipboard>&nbsp;&nbsp;&nbsp;(정성래)
                         </text>
                             <div className="AccountInfoBtn">
-                                <CopyToClipboard text={groomAccountNum} onCopy={() => textCopyAlert({groomAccountNum})}>
+                                <CopyToClipboard text={SeungHoonAccountNum} onCopy={() => textCopyAlert({SeungHoonAccountNum})}>
                                     <img className="AccountCopyIcon" src="/img/acc_copy_button.png"/></CopyToClipboard>&nbsp;&nbsp;
                                 <a href="https://pay-home.kakao.com/talk/scheme/money/to/qr?qr_code= &chan= &is_intermediary=false">
                                     <img className="KakaoPayIcon" src="/img/kakaopay_button.png"/>
@@ -505,31 +559,31 @@ function App() {
                         <div className="animate__animated animate__fadeIn">
                             <text className="AccountTitle">신부 아버지 계좌번호</text><br/>
                         <text className="AccountInfoText">
-                            <CopyToClipboard className="CopyText" text={brideDadAccountNum} onCopy={() => textCopyAlert({brideDadAccountNum})}>
-                                <text>{brideDadAccountNum}</text></CopyToClipboard>&nbsp;&nbsp;&nbsp;(아부지)
+                            <CopyToClipboard className="CopyText" text={oneCrystalDadstalAccountNum} onCopy={() => textCopyAlert({oneCrystalDadstalAccountNum})}>
+                                <text>{oneCrystalDadstalAccountNum}</text></CopyToClipboard>&nbsp;&nbsp;&nbsp;(아부지)
                         </text>
                             <div className="AccountInfoBtn">
-                                <CopyToClipboard text={brideDadAccountNum} onCopy={() => textCopyAlert({brideDadAccountNum})}>
+                                <CopyToClipboard text={oneCrystalDadstalAccountNum} onCopy={() => textCopyAlert({oneCrystalDadstalAccountNum})}>
                                     <img className="AccountCopyIcon" src="/img/acc_copy_button.png"/></CopyToClipboard>
                             </div>
-                            <br/>
+                        <br/>
                         <text className="AccountTitle">신부 어머니 계좌번호</text><br/>
                         <text className="AccountInfoText">
-                            <CopyToClipboard className="CopyText" text={brideMomAccountNum} onCopy={() => textCopyAlert({brideMomAccountNum})}>
-                                <text>{brideMomAccountNum}</text></CopyToClipboard>&nbsp;&nbsp;&nbsp;(어무니)&nbsp;&nbsp;
+                            <CopyToClipboard className="CopyText" text={oneCrystalMomstalAccountNum} onCopy={() => textCopyAlert({oneCrystalMomstalAccountNum})}>
+                                <text>{oneCrystalMomstalAccountNum}</text></CopyToClipboard>&nbsp;&nbsp;&nbsp;(어무니)&nbsp;&nbsp;
                         </text>
                             <div className="AccountInfoBtn">
-                                <CopyToClipboard text={brideMomAccountNum} onCopy={() => textCopyAlert({brideMomAccountNum})}>
+                                <CopyToClipboard text={oneCrystalMomstalAccountNum} onCopy={() => textCopyAlert({oneCrystalMomstalAccountNum})}>
                                     <img className="AccountCopyIcon" src="/img/acc_copy_button.png"/></CopyToClipboard>
                             </div>
                         <br/>
                         <text className="AccountTitle">신부 계좌번호</text><br/>
                         <text className="AccountInfoText">
-                            <CopyToClipboard className="CopyText" text={brideAccountNum} onCopy={() => textCopyAlert({brideAccountNum})}>
-                                <text>{brideAccountNum}</text></CopyToClipboard>&nbsp;&nbsp;&nbsp;(이지수)&nbsp;&nbsp;
+                            <CopyToClipboard className="CopyText" text={oneCrystalAccountNum} onCopy={() => textCopyAlert({oneCrystalAccountNum})}>
+                                <text>{oneCrystalAccountNum}</text></CopyToClipboard>&nbsp;&nbsp;&nbsp;(이지수)&nbsp;&nbsp;
                         </text>
                             <div className="AccountInfoBtn">
-                                <CopyToClipboard text={brideAccountNum} onCopy={() => textCopyAlert({brideAccountNum})}>
+                                <CopyToClipboard text={oneCrystalAccountNum} onCopy={() => textCopyAlert({oneCrystalAccountNum})}>
                                     <img className="AccountCopyIcon" src="/img/acc_copy_button.png"/></CopyToClipboard>&nbsp;&nbsp;
                                 <a href="https://pay-home.kakao.com/talk/scheme/money/to/qr?qr_code= &chan= &is_intermediary=false">
                                     <img className="KakaoPayIcon" src="/img/kakaopay_button.png"/>
@@ -556,18 +610,17 @@ function App() {
                 <text className="TextArea">
                     <ScrollAnimation animateIn="fadeInUp" animateOnce={true}>
                     <text className="TransportationType">Q. 신혼여행은 어디로 가나요?</text><br/>
-                    <text className="ContentsTextArea">A. 몰디브로 갑니다! (달러야 진정해..)</text>
+                    <text className="ContentsTextArea">A. 로마 & 파리로 갑니다!</text>
                     </ScrollAnimation>
                     <br/>
                     <ScrollAnimation animateIn="fadeInUp" animateOnce={true}>
                         <text className="TransportationType">Q. 꽃이 예쁘다던데..</text><br/>
-                        <text className="ContentsTextArea">A. 식이 끝나고 테이블 꽃을 가져가실 수 있습니다!<br/>
-                        직원의 안내에 따라 꽃 포장해서 가져가세용~</text>
+                        <text className="ContentsTextArea">A. 수정이가 꽃이에요 ㅎ</text>
                     </ScrollAnimation>
                     <br/>
                     <ScrollAnimation animateIn="fadeInUp" animateOnce={true}>
                         <text className="TransportationType">Q. 밥이 맛있다던데..</text><br/>
-                        <text className="ContentsTextArea">A. 식사는 한식 코스로 제공됩니다!</text>
+                        <text className="ContentsTextArea">A. 다양한 음식으로 구성된 뷔페로 준비했습니다. 마음껏 드세요!</text>
                     </ScrollAnimation>
                 </text>
 
@@ -582,7 +635,7 @@ function App() {
             <br/><br/><br/>
 
             <div className="Footer">
-                <p>Designed & Developed by Jisoo</p>
+                <p>Designed & Developed by SeungHoon</p>
             </div>
 
             <div id="ImageViewWindow" className="ImageViewWindow">
@@ -631,6 +684,39 @@ function App() {
                              onTouchStart={(event) => handleTouchStart(event)}
                              onTouchMove={(event) => handleTouchMove(event)}
                              onTouchEnd={() => handleTouchEnd(10)}/>
+                        <img id="i11" className="Image" src="/img/img11.jpg"
+                             onTouchStart={(event) => handleTouchStart(event)}
+                             onTouchMove={(event) => handleTouchMove(event)}
+                             onTouchEnd={() => handleTouchEnd(10)}/>
+                        <img id="i12" className="Image" src="/img/img12.jpg"
+                             onTouchStart={(event) => handleTouchStart(event)}
+                             onTouchMove={(event) => handleTouchMove(event)}
+                             onTouchEnd={() => handleTouchEnd(10)}/>
+                        <img id="i13" className="Image" src="/img/img13.jpg"
+                             onTouchStart={(event) => handleTouchStart(event)}
+                             onTouchMove={(event) => handleTouchMove(event)}
+                             onTouchEnd={() => handleTouchEnd(10)}/>
+                        <img id="i14" className="Image" src="/img/img14.jpg"
+                             onTouchStart={(event) => handleTouchStart(event)}
+                             onTouchMove={(event) => handleTouchMove(event)}
+                             onTouchEnd={() => handleTouchEnd(10)}/>
+                        <img id="i15" className="Image" src="/img/img15.jpg"
+                             onTouchStart={(event) => handleTouchStart(event)}
+                             onTouchMove={(event) => handleTouchMove(event)}
+                             onTouchEnd={() => handleTouchEnd(10)}/>
+                        <img id="i16" className="Image" src="/img/img16.jpg"
+                             onTouchStart={(event) => handleTouchStart(event)}
+                             onTouchMove={(event) => handleTouchMove(event)}
+                             onTouchEnd={() => handleTouchEnd(10)}/>
+                        <img id="i17" className="Image" src="/img/img17.jpg"
+                             onTouchStart={(event) => handleTouchStart(event)}
+                             onTouchMove={(event) => handleTouchMove(event)}
+                             onTouchEnd={() => handleTouchEnd(10)}/>
+                        <img id="i18" className="Image" src="/img/img18.jpg"
+                             onTouchStart={(event) => handleTouchStart(event)}
+                             onTouchMove={(event) => handleTouchMove(event)}
+                             onTouchEnd={() => handleTouchEnd(10)}/>                              
+                             
                     </div>
                 </div>
                 <button className="PrevButtonPanel" onClick={() => openImage(selectedImg-1, selectedImg)}>

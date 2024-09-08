@@ -299,7 +299,7 @@ function App() {
                 <table>
                     <tr>
                         <div id="p1" className="ThumbnailItem">
-                            <div className="ThumbnailWrapper">
+                            <div className="ThumbnailWrapper" style="margin-top:40%">
                                 <img className="Thumbnail" src={"/img/IMG01.jpg"} onClick={() => openImage(1)}/>
                             </div>
                         </div>
@@ -321,7 +321,7 @@ function App() {
                             </div>
                         </div>
                         <div id="p5" className="ThumbnailItem">
-                            <div className="ThumbnailWrapper">
+                            <div className="ThumbnailWrapper" style="margin-top:40%">
                                 <img className="Thumbnail" src="/img/IMG05.jpg" onClick={() => openImage(5)}/>
                             </div>
                         </div>
@@ -360,14 +360,14 @@ function App() {
                             </div>
                         </div>
                         <div id="p12" className="ThumbnailItem" style={{display: "none"}}>
-                            <div className="ThumbnailWrapper">
+                            <div className="ThumbnailWrapper" style="margin-top:40%">
                                 <img className="Thumbnail" src="/img/IMG12.jpg" onClick={() => openImage(12)}/>
                             </div>
                         </div>
                     </tr>
                     <tr>
                         <div id="p13" className="ThumbnailItem" style={{display: "none"}}>
-                            <div className="ThumbnailWrapper">
+                            <div className="ThumbnailWrapper" style="margin-top:40%">
                                 <img className="Thumbnail" src="/img/IMG13.jpg" onClick={() => openImage(13)}/>
                             </div>
                         </div>
@@ -389,12 +389,12 @@ function App() {
                             </div>
                         </div>
                         <div id="p17" className="ThumbnailItem" style={{display: "none"}}>
-                            <div className="ThumbnailWrapper">
+                            <div className="ThumbnailWrapper" style="margin-top:40%">
                                 <img className="Thumbnail" src="/img/IMG17.jpg" onClick={() => openImage(17)}/>
                             </div>
                         </div>
                         <div id="p18" className="ThumbnailItem" style={{display: "none"}}>
-                            <div className="ThumbnailWrapper">
+                            <div className="ThumbnailWrapper" style="margin-top:40%">
                                 <img className="Thumbnail" src="/img/IMG18.jpg" onClick={() => openImage(18)}/>
                             </div>
                         </div>

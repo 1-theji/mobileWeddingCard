@@ -396,7 +396,7 @@ function App() {
                         </div>
                         <div id="p18" className="ThumbnailItem" style={{display: "none"}}>
                             <div className="ThumbnailWrapper">
-                                <img className="Thumbnail" src="/img/IMG18.jpg"  onClick={() => openImage(18)}/>
+                                <img className="Thumbnail" src="/img/IMG18.jpg"  style={{ marginTop: '40%' }} onClick={() => openImage(18)}/>
                             </div>
                         </div>
                     </tr>

@@ -5,6 +5,7 @@ import {CopyToClipboard} from "react-copy-to-clipboard/src";
 import KakaoShareButton from "./kakao/share";
 import ScrollAnimation from 'react-animate-on-scroll';
 import 'animate.css';
+
 import Snowfall from 'react-snowfall';
 
 
@@ -179,6 +180,9 @@ function App() {
             loading={<p>Maps Loading...</p>}
         >
         <div>
+             <audio autoPlay loop>
+                <source src="/img/song.mp3" />
+            </audio>
             <div className="GreetingImage">               
                 <video className="GreetingSnap" autoPlay loop muted playsInline controls>
                     <source src="/img/gate_1.mp4" type="video/mp4" ></source>
@@ -298,16 +302,20 @@ function App() {
                 <div className="ThumbnailTable">
                 <table>
                     <tr>
-                    <div id="p1" className="ThumbnailItem">
-                        <div className="ThumbnailWrapper">
-                            <img className="Thumbnail" src={"/img/IMG01.jpg"} onClick={() => openImage(1)}/>
-                        </div>
-                    </div>
-                    <div id="p2" className="ThumbnailItem">
-                        <div className="ThumbnailWrapper">
-                            <img className="Thumbnail" src="/img/IMG02.jpg" onClick={() => openImage(2)}/>
-                        </div>
-                    </div>
+                        <td>
+                            <div id="p1" className="ThumbnailItem">
+                                <div className="ThumbnailWrapper" style="margin-top:40%">
+                                    <img className="Thumbnail" src={"/img/IMG01.jpg"} onClick={() => openImage(1)}/>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div id="p2" className="ThumbnailItem">
+                                <div className="ThumbnailWrapper">
+                                    <img className="Thumbnail" src="/img/IMG02.jpg" onClick={() => openImage(2)}/>
+                                </div>
+                            </div>
+                        </td>
                     <div id="p3" className="ThumbnailItem">
                         <div className="ThumbnailWrapper">
                             <img className="Thumbnail" src="/img/IMG03.jpg" onClick={() => openImage(3)}/>
@@ -321,7 +329,7 @@ function App() {
                         </div>
                     </div>
                     <div id="p5" className="ThumbnailItem">
-                        <div className="ThumbnailWrapper">
+                        <div className="ThumbnailWrapper" style="margin-top:40%">
                             <img className="Thumbnail" src="/img/IMG05.jpg" onClick={() => openImage(5)}/>
                         </div>
                     </div>
@@ -360,14 +368,14 @@ function App() {
                         </div>
                     </div>
                     <div id="p12" className="ThumbnailItem" style={{display: "none"}}>
-                        <div className="ThumbnailWrapper">
+                        <div className="ThumbnailWrapper" style="margin-top:40%">
                             <img className="Thumbnail" src="/img/IMG12.jpg" onClick={() => openImage(12)}/>
                         </div>
                     </div>
                     </tr>
                     <tr>
                     <div id="p13" className="ThumbnailItem" style={{display: "none"}}>
-                        <div className="ThumbnailWrapper">
+                        <div className="ThumbnailWrapper" style="margin-top:40%">
                             <img className="Thumbnail" src="/img/IMG13.jpg" onClick={() => openImage(13)}/>
                         </div>
                     </div>
@@ -389,12 +397,12 @@ function App() {
                         </div>
                     </div>
                     <div id="p17" className="ThumbnailItem" style={{display: "none"}}>
-                        <div className="ThumbnailWrapper">
+                        <div className="ThumbnailWrapper" style="margin-top:40%">
                             <img className="Thumbnail" src="/img/IMG17.jpg" onClick={() => openImage(17)}/>
                         </div>
                     </div>
                     <div id="p18" className="ThumbnailItem" style={{display: "none"}}>
-                        <div className="ThumbnailWrapper">
+                        <div className="ThumbnailWrapper" style="margin-top:40%">
                             <img className="Thumbnail" src="/img/IMG18.jpg" onClick={() => openImage(18)}/>
                         </div>
                     </div>

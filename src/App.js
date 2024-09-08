@@ -180,9 +180,6 @@ function App() {
             loading={<p>Maps Loading...</p>}
         >
         <div>
-             <audio autoPlay loop>
-                <source src="/img/song.mp3" />
-            </audio>
             <div className="GreetingImage">               
                 <video className="GreetingSnap" autoPlay loop muted playsInline controls>
                     <source src="/img/gate_1.mp4" type="video/mp4" ></source>

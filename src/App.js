@@ -18,7 +18,7 @@ function App() {
     const oneCrystalMomstalAccountNum = "신한 111-11-1111-111";
 
 
-    const [selectedImg, setSelectedImg] = useState(1); // 현재 선택된 이미지 상태
+    const [selectedImg, setSelectedImg] = React.useState(1); // 현재 선택된 이미지 상태
     const [touchStartX, setTouchStartX] = React.useState(0);
     const [touchStartY, setTouchStartY] = React.useState(0);
     const [touchEndX, setTouchEndX] = React.useState(0);

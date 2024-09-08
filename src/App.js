@@ -301,7 +301,7 @@ function App() {
                     <tr>
                         <div id="p1" className="ThumbnailItem">
                             <div className="ThumbnailWrapper">
-                                <img className="Thumbnail" src={"/img/IMG01.jpg"}  style="margin-top:40%" onClick={() => openImage(1)}/>
+                                <img className="Thumbnail" src={"/img/IMG01.jpg"}   style={{ marginTop: '40%' }} onClick={() => openImage(1)}/>
                             </div>
                         </div>
                         <div id="p2" className="ThumbnailItem">
@@ -323,7 +323,7 @@ function App() {
                         </div>
                         <div id="p5" className="ThumbnailItem">
                             <div className="ThumbnailWrapper">
-                                <img className="Thumbnail" src="/img/IMG05.jpg"  style="margin-top:40%" onClick={() => openImage(5)}/>
+                                <img className="Thumbnail" src="/img/IMG05.jpg"   style={{ marginTop: '40%' }} onClick={() => openImage(5)}/>
                             </div>
                         </div>
                         <div id="p6" className="ThumbnailItem">
@@ -362,14 +362,14 @@ function App() {
                         </div>
                         <div id="p12" className="ThumbnailItem" style={{display: "none"}}>
                             <div className="ThumbnailWrapper">
-                                <img className="Thumbnail" src="/img/IMG12.jpg"  style="margin-top:40%" onClick={() => openImage(12)}/>
+                                <img className="Thumbnail" src="/img/IMG12.jpg"   style={{ marginTop: '40%' }} onClick={() => openImage(12)}/>
                             </div>
                         </div>
                     </tr>
                     <tr>
                         <div id="p13" className="ThumbnailItem" style={{display: "none"}}>
                             <div className="ThumbnailWrapper">
-                                <img className="Thumbnail" src="/img/IMG13.jpg"  style="margin-top:40%" onClick={() => openImage(13)}/>
+                                <img className="Thumbnail" src="/img/IMG13.jpg"   style={{ marginTop: '40%' }} onClick={() => openImage(13)}/>
                             </div>
                         </div>
                         <div id="p14" className="ThumbnailItem" style={{display: "none"}}>
@@ -391,12 +391,12 @@ function App() {
                         </div>
                         <div id="p17" className="ThumbnailItem" style={{display: "none"}}>
                             <div className="ThumbnailWrapper">
-                                <img className="Thumbnail" src="/img/IMG17.jpg"  style="margin-top:40%" onClick={() => openImage(17)}/>
+                                <img className="Thumbnail" src="/img/IMG17.jpg"   style={{ marginTop: '40%' }} onClick={() => openImage(17)}/>
                             </div>
                         </div>
                         <div id="p18" className="ThumbnailItem" style={{display: "none"}}>
                             <div className="ThumbnailWrapper">
-                                <img className="Thumbnail" src="/img/IMG18.jpg"   style="margin-top:40%" onClick={() => openImage(18)}/>
+                                <img className="Thumbnail" src="/img/IMG18.jpg"  onClick={() => openImage(18)}/>
                             </div>
                         </div>
                     </tr>

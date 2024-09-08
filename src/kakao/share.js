@@ -19,7 +19,7 @@ const KakaoShareButton = () => {
                 content: {
                     title: '[모바일청첩장] 승훈♥수정 결혼식에 초대합니다!',
                     description: '24.11.16 영등포 더 컨벤션 13:40 AM',
-                    imageUrl: "https://raw.githubusercontent.com/1-theji/mobileWeddingCard/main/public/img/IMG05.jpg",
+                    imageUrl: "https://raw.githubusercontent.com/1-theji/mobileWeddingCard/main/public/img/IMG01.jpg",
                     link: {
                         mobileWebUrl: window.location.href,
                         webUrl: window.location.href,

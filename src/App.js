@@ -11,11 +11,11 @@ import Snowfall from 'react-snowfall';
 function App() {
     const totalImg = 18;
     const SeungHoonAccountNum = "신한 110-328-002457";
-    const SeungHoonDadAccountNum = "농협 111-11-111111";
-    const SeungHoonMonAccountNum ="하나 123-123-123123"
-    const oneCrystalAccountNum = "국민 93294-0627-60";
-    const oneCrystalDadstalAccountNum = "하나 111-111111-11111";
-    const oneCrystalMomstalAccountNum = "신한 111-11-1111-111";
+    const SeungHoonDadAccountNum = "농협 356-1153-0768-83";
+    const SeungHoonMonAccountNum ="농협 970120-39790"
+    const oneCrystalAccountNum = "국민 932940-62760";
+    const oneCrystalDadstalAccountNum = "국민 426601-01-126258";
+    const oneCrystalMomstalAccountNum = "국민 426602-01-126679";
 
 
     const [selectedImg, setSelectedImg] = React.useState(1); // 현재 선택된 이미지 상태
@@ -570,7 +570,7 @@ function App() {
                             <div className="AccountInfoBtn">
                                 <CopyToClipboard text={oneCrystalAccountNum} onCopy={() => textCopyAlert({oneCrystalAccountNum})}>
                                     <img className="AccountCopyIcon" src="/img/acc_copy_button.png"/></CopyToClipboard>&nbsp;&nbsp;
-                                <a href="https://pay-home.kakao.com/talk/scheme/money/to/qr?qr_code= &chan= &is_intermediary=false">
+                                <a href="https://qr.kakaopay.com/Ej9R2QBZM">
                                     <img className="KakaoPayIcon" src="/img/kakaopay_button.png"/>
                                 </a>
                             </div>
@@ -596,11 +596,6 @@ function App() {
                     <ScrollAnimation animateIn="fadeInUp" animateOnce={true}>
                     <text className="TransportationType">Q. 신혼여행은 어디로 가나요?</text><br/>
                     <text className="ContentsTextArea">A. 로마 & 파리로 갑니다!</text>
-                    </ScrollAnimation>
-                    <br/>
-                    <ScrollAnimation animateIn="fadeInUp" animateOnce={true}>
-                        <text className="TransportationType">Q. 꽃이 예쁘다던데..</text><br/>
-                        <text className="ContentsTextArea">A. 수정이가 꽃이에요 ㅎ</text>
                     </ScrollAnimation>
                     <br/>
                     <ScrollAnimation animateIn="fadeInUp" animateOnce={true}>

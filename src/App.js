@@ -9,7 +9,6 @@ import Snowfall from 'react-snowfall';
 
 
 function App() {
-    let selectedImg = 1;
     const totalImg = 18;
     const SeungHoonAccountNum = "신한 110-328-002457";
     const SeungHoonDadAccountNum = "농협 111-11-111111";
@@ -18,6 +17,8 @@ function App() {
     const oneCrystalDadstalAccountNum = "하나 111-111111-11111";
     const oneCrystalMomstalAccountNum = "신한 111-11-1111-111";
 
+
+    const [selectedImg, setSelectedImg] = useState(1); // 현재 선택된 이미지 상태
     const [touchStartX, setTouchStartX] = React.useState(0);
     const [touchStartY, setTouchStartY] = React.useState(0);
     const [touchEndX, setTouchEndX] = React.useState(0);
@@ -25,12 +26,6 @@ function App() {
 
     const handleClickScrollGallery = () => {
         const element = document.getElementById('gallery');
-        if (element) {
-            element.scrollIntoView();
-        }
-    };
-    const handleClickScrollSongdo = () => {
-        const element = document.getElementById('publicBus');
         if (element) {
             element.scrollIntoView();
         }
@@ -47,21 +42,22 @@ function App() {
         setTouchEndY(e.targetTouches[0].clientY);
     }
 
-    function handleTouchEnd(index) {
+    function handleTouchEnd() {
         const distanceX = Math.abs(touchStartX - touchEndX);
         const distanceY = Math.abs(touchStartY - touchEndY);
-
+    
         if (distanceX > 90 && distanceY < 90) {
             if (touchStartX - touchEndX > 0) {
-                openImage(index+1, index);
+                openImage(selectedImg + 1); // 오른쪽으로 넘김
             } else {
-                openImage(index-1, index);
+                openImage(selectedImg - 1); // 왼쪽으로 넘김
             }
         }
-        setTouchStartX(() => 0);
-        setTouchStartY(() => 0);
-        setTouchEndX(() => 0);
-        setTouchEndY(() => 0);
+    
+        setTouchStartX(0);
+        setTouchStartY(0);
+        setTouchEndX(0);
+        setTouchEndY(0);
     }
 
     useEffect(() => {
@@ -102,21 +98,24 @@ function App() {
         alert(copyText + ' 클립보드에 복사되었습니다 :)');
     }
 
-    function openImage(imageId, prevId=null) {
-        selectedImg = imageId;
+    function openImage(imageId) {
+        let newSelectedImg = imageId;
+
         if (imageId < 1) {
             selectedImg = totalImg;
         } else if (imageId > totalImg) {
-            selectedImg = 1;
+            newSelectedImg  = 1;
         }
+
+        setSelectedImg(newSelectedImg); // 선택된 이미지 상태 업데이
 
         if (document.getElementById("ImageViewWindow").style.display !== "block") {
             document.getElementById("ImageViewWindow").style.display = "block";
         }
 
         for (let i = 1; i < totalImg+1; i++) {
-            if (i === selectedImg) {
-                document.getElementById("i"+selectedImg).style.display = "inline-block";
+            if (i === newSelectedImg) { // newSelectedImg로 이미지 표시
+                document.getElementById("i"+i).style.display = "inline-block";
             } else {
                 document.getElementById("i"+i).style.display = "none";
             }

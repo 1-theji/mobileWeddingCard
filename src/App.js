@@ -182,6 +182,7 @@ function App() {
             <div className="GreetingImage">               
                 <video className="GreetingSnap" autoPlay loop muted playsInline controls>
                     <source src="/img/gate_1.mp4" type="video/mp4" ></source>
+                    <audio autoPlay loop><source src="/img/song.mp3" /></audio>
                 </video>            
             </div>
             <div className="animate__animated animate__fadeIn" style={{animationDuration: "4s"}}>

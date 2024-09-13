@@ -488,7 +488,7 @@ function App() {
                                     <img className="AccountCopyIcon" src="/img/acc_copy_button.png"/></CopyToClipboard>
                             </div>
                         <br/>
-                        <text className="AccountTitle">신부 어머니 계좌번호</text><br/>
+                        <text className="AccountTitle">신랑 어머니 계좌번호</text><br/>
                         <text className="AccountInfoText">
                             <CopyToClipboard className="CopyText" text={SeungHoonMonAccountNum} onCopy={() => textCopyAlert({SeungHoonMonAccountNum})}>
                                 <text>{SeungHoonMonAccountNum}</text></CopyToClipboard>&nbsp;&nbsp;&nbsp;(하춘자)&nbsp;&nbsp;

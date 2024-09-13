@@ -133,7 +133,7 @@ function App() {
 
     function showMorePhotos() {
         console.log("totalImg : " + totalImg);
-        if (document.getElementById("p10").style.display !== "inline") {
+        if (document.getElementById("p12").style.display !== "inline") {
             document.getElementById("smb").textContent = "닫기";
             for (let i = 10; i < totalImg+i; i++) {
                 console.log("for : " + totalImg);
@@ -142,7 +142,7 @@ function App() {
             return
         } else {
             document.getElementById("smb").textContent = "더보기";
-            for (let i = 10; i < totalImg+i; i++) {
+            for (let i = 12; i < totalImg+i; i++) {
                 document.getElementById("p"+i).style.display = "none";
             }
             handleClickScrollGallery();
@@ -198,7 +198,7 @@ function App() {
                 </ScrollAnimation>
                 <text className="TextArea">
                     <ScrollAnimation animateIn="fadeIn">
-                        서로 마주 보며 다져온 사랑을<br/>
+                        서로 마주 보며 다져온 사람을<br/>
                         이제 함께 한곳을 바라보며 걸어갈 수 있는<br/>
                         큰 사랑으로 키우고자 합니다<br/><br/>
                     </ScrollAnimation>
@@ -300,14 +300,14 @@ function App() {
                     <tr>
                         <div id="p1" className="ThumbnailItem">
                             <div className="ThumbnailWrapper">
-                                <img className="Thumbnail" src={"/img/IMG01.jpg"} onClick={() => openImage(1)}/>
+                                <img className="Thumbnail" src={"/img/IMG01.jpg"} style={{ width: '100%' }} onClick={() => openImage(1)}/>
                             </div>
                         </div>
                     </tr>
                     <tr>
                         <div id="p2" className="ThumbnailItem">
                             <div className="ThumbnailWrapper">
-                                <img className="Thumbnail" src="/img/IMG02.jpg" onClick={() => openImage(2)}/>
+                                <img className="Thumbnail" src="/img/IMG02.jpg" style={{ width: '100%' }} onClick={() => openImage(2)}/>
                             </div>
                         </div>
                     </tr>
@@ -352,12 +352,12 @@ function App() {
                                 <img className="Thumbnail" src="/img/IMG09.jpg" onClick={() => openImage(9)}/>
                             </div>
                         </div>
-                        <div id="p10" className="ThumbnailItem" style={{display: "none"}}>
+                        <div id="p10" className="ThumbnailItem">
                             <div className="ThumbnailWrapper">
                                 <img className="Thumbnail" src="/img/IMG10.jpg" onClick={() => openImage(10)}/>
                             </div>
                         </div>
-                        <div id="p11" className="ThumbnailItem" style={{display: "none"}}>
+                        <div id="p11" className="ThumbnailItem">
                             <div className="ThumbnailWrapper">
                                 <img className="Thumbnail" src="/img/IMG11.jpg" onClick={() => openImage(11)}/>
                             </div>

@@ -298,16 +298,16 @@ function App() {
                 <div className="ThumbnailTable">
                 <table>
                     <tr>
-                        <div id="p1" className="ThumbnailItem">
+                        <div id="p1" className="ThumbnailItem"  style={{ width: '100%' }}>
                             <div className="ThumbnailWrapper">
-                                <img className="Thumbnail" src={"/img/IMG01.jpg"} style={{ width: '100%' }} onClick={() => openImage(1)}/>
+                                <img className="Thumbnail" src={"/img/IMG01.jpg"}onClick={() => openImage(1)}/>
                             </div>
                         </div>
                     </tr>
                     <tr>
-                        <div id="p2" className="ThumbnailItem">
+                        <div id="p2" className="ThumbnailItem" style={{ width: '100%' }}>
                             <div className="ThumbnailWrapper">
-                                <img className="Thumbnail" src="/img/IMG02.jpg" style={{ width: '100%' }} onClick={() => openImage(2)}/>
+                                <img className="Thumbnail" src="/img/IMG02.jpg" onClick={() => openImage(2)}/>
                             </div>
                         </div>
                     </tr>

@@ -9,7 +9,7 @@ import Snowfall from 'react-snowfall';
 
 
 function App() {
-    const totalImg = 18;
+    const totalImg = 15;
     const SeungHoonAccountNum = "신한 110-328-002457";
     const SeungHoonDadAccountNum = "농협 356-1153-0768-83";
     const SeungHoonMonAccountNum ="농협 970120-39790"
@@ -300,21 +300,23 @@ function App() {
                     <tr>
                         <div id="p1" className="ThumbnailItem">
                             <div className="ThumbnailWrapper">
-                                <img className="Thumbnail" src={"/img/IMG01.jpg"}   style={{ marginTop: '40%' }} onClick={() => openImage(1)}/>
+                                <img className="Thumbnail" src={"/img/IMG01.jpg"} onClick={() => openImage(1)}/>
                             </div>
                         </div>
+                    </tr>
+                    <tr>
                         <div id="p2" className="ThumbnailItem">
                             <div className="ThumbnailWrapper">
                                 <img className="Thumbnail" src="/img/IMG02.jpg" onClick={() => openImage(2)}/>
                             </div>
                         </div>
+                    </tr>
+                    <tr>
                         <div id="p3" className="ThumbnailItem">
                             <div className="ThumbnailWrapper">
                                 <img className="Thumbnail" src="/img/IMG03.jpg" onClick={() => openImage(3)}/>
                             </div>
                         </div>
-                    </tr>
-                    <tr>
                         <div id="p4" className="ThumbnailItem">
                             <div className="ThumbnailWrapper">
                                 <img className="Thumbnail" src="/img/IMG04.jpg" onClick={() => openImage(4)}/>
@@ -322,16 +324,17 @@ function App() {
                         </div>
                         <div id="p5" className="ThumbnailItem">
                             <div className="ThumbnailWrapper">
-                                <img className="Thumbnail" src="/img/IMG05.jpg"   style={{ marginTop: '40%' }} onClick={() => openImage(5)}/>
+                                <img className="Thumbnail" src="/img/IMG05.jpg" onClick={() => openImage(5)}/>
                             </div>
                         </div>
+                    </tr>
+                    <tr>
+                        
                         <div id="p6" className="ThumbnailItem">
                             <div className="ThumbnailWrapper">
                                 <img className="Thumbnail" src="/img/IMG06.jpg" onClick={() => openImage(6)}/>
                             </div>
                         </div>
-                    </tr>
-                    <tr>
                         <div id="p7" className="ThumbnailItem">
                             <div className="ThumbnailWrapper">
                                 <img className="Thumbnail" src="/img/IMG07.jpg" onClick={() => openImage(7)}/>
@@ -342,13 +345,13 @@ function App() {
                                 <img className="Thumbnail" src="/img/IMG08.jpg" onClick={() => openImage(8)}/>
                             </div>
                         </div>
+                    </tr>
+                    <tr>
                         <div id="p9" className="ThumbnailItem">
                             <div className="ThumbnailWrapper">
                                 <img className="Thumbnail" src="/img/IMG09.jpg" onClick={() => openImage(9)}/>
                             </div>
                         </div>
-                    </tr>
-                    <tr>
                         <div id="p10" className="ThumbnailItem" style={{display: "none"}}>
                             <div className="ThumbnailWrapper">
                                 <img className="Thumbnail" src="/img/IMG10.jpg" onClick={() => openImage(10)}/>
@@ -359,16 +362,16 @@ function App() {
                                 <img className="Thumbnail" src="/img/IMG11.jpg" onClick={() => openImage(11)}/>
                             </div>
                         </div>
-                        <div id="p12" className="ThumbnailItem" style={{display: "none"}}>
-                            <div className="ThumbnailWrapper">
-                                <img className="Thumbnail" src="/img/IMG12.jpg"   style={{ marginTop: '40%' }} onClick={() => openImage(12)}/>
-                            </div>
-                        </div>
                     </tr>
                     <tr>
+                        <div id="p12" className="ThumbnailItem" style={{display: "none"}}>
+                            <div className="ThumbnailWrapper">
+                                <img className="Thumbnail" src="/img/IMG12.jpg" onClick={() => openImage(12)}/>
+                            </div>
+                        </div>
                         <div id="p13" className="ThumbnailItem" style={{display: "none"}}>
                             <div className="ThumbnailWrapper">
-                                <img className="Thumbnail" src="/img/IMG13.jpg"   style={{ marginTop: '40%' }} onClick={() => openImage(13)}/>
+                                <img className="Thumbnail" src="/img/IMG13.jpg" onClick={() => openImage(13)}/>
                             </div>
                         </div>
                         <div id="p14" className="ThumbnailItem" style={{display: "none"}}>
@@ -376,29 +379,7 @@ function App() {
                                 <img className="Thumbnail" src="/img/IMG14.jpg" onClick={() => openImage(14)}/>
                             </div>
                         </div>
-                        <div id="p15" className="ThumbnailItem" style={{display: "none"}}>
-                            <div className="ThumbnailWrapper">
-                                <img className="Thumbnail" src="/img/IMG15.jpg" onClick={() => openImage(15)}/>
-                            </div>
-                        </div>
-                    </tr>
-                    <tr>
-                        <div id="p16" className="ThumbnailItem" style={{display: "none"}}>
-                            <div className="ThumbnailWrapper">
-                                <img className="Thumbnail" src="/img/IMG16.jpg" onClick={() => openImage(16)}/>
-                            </div>
-                        </div>
-                        <div id="p17" className="ThumbnailItem" style={{display: "none"}}>
-                            <div className="ThumbnailWrapper">
-                                <img className="Thumbnail" src="/img/IMG17.jpg"   style={{ marginTop: '40%' }} onClick={() => openImage(17)}/>
-                            </div>
-                        </div>
-                        <div id="p18" className="ThumbnailItem" style={{display: "none"}}>
-                            <div className="ThumbnailWrapper">
-                                <img className="Thumbnail" src="/img/IMG18.jpg"  style={{ marginTop: '40%' }} onClick={() => openImage(18)}/>
-                            </div>
-                        </div>
-                    </tr>
+                    </tr>                  
                 </table>
                 </div>
                 </ScrollAnimation>
@@ -680,22 +661,7 @@ function App() {
                              onTouchStart={(event) => handleTouchStart(event)}
                              onTouchMove={(event) => handleTouchMove(event)}
                              onTouchEnd={() => handleTouchEnd(14)}/>
-                        <img id="i15" className="Image" src="/img/IMG15.jpg"
-                             onTouchStart={(event) => handleTouchStart(event)}
-                             onTouchMove={(event) => handleTouchMove(event)}
-                             onTouchEnd={() => handleTouchEnd(15)}/>
-                        <img id="i16" className="Image" src="/img/IMG16.jpg"
-                             onTouchStart={(event) => handleTouchStart(event)}
-                             onTouchMove={(event) => handleTouchMove(event)}
-                             onTouchEnd={() => handleTouchEnd(16)}/>
-                        <img id="i17" className="Image" src="/img/IMG17.jpg"
-                             onTouchStart={(event) => handleTouchStart(event)}
-                             onTouchMove={(event) => handleTouchMove(event)}
-                             onTouchEnd={() => handleTouchEnd(17)}/>
-                        <img id="i18" className="Image" src="/img/IMG18.jpg"
-                             onTouchStart={(event) => handleTouchStart(event)}
-                             onTouchMove={(event) => handleTouchMove(event)}
-                             onTouchEnd={() => handleTouchEnd(18)}/>                              
+                                                     
                              
                     </div>
                 </div>

@@ -198,7 +198,7 @@ function App() {
                 </ScrollAnimation>
                 <text className="TextArea">
                     <ScrollAnimation animateIn="fadeIn">
-                        서로 마주 보며 다져온 사람을<br/>
+                        서로 마주 보며 다져온 사랑을<br/>
                         이제 함께 한곳을 바라보며 걸어갈 수 있는<br/>
                         큰 사랑으로 키우고자 합니다<br/><br/>
                     </ScrollAnimation>

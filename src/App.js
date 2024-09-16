@@ -185,7 +185,7 @@ function App() {
                 </video>            
             </div>
             <div className="animate__animated animate__fadeIn" style={{animationDuration: "4s"}}>
-                <p style={{color: "#5B5454", fontSize: "30px", lineHeight: 1.6}}>
+                <p style={{color: "#5B5454", fontSize: "25px", lineHeight: 1.6}}>
                     <br/>
                     2024년 11월 16일 토요일 오후 01:40<br/>
                     더컨벤션 영등포, 2층 다이너스홀<br/><br/>

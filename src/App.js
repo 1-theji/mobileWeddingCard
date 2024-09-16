@@ -437,7 +437,7 @@ function App() {
                         <ScrollAnimation animateIn="fadeInUp" animateOnce={true}>
                         <text className="TransportationType">지 하 철</text><br/>
                             <text className="ContentsTextArea">2호선, 5호선 <u>영등포 구청역 하차</u><br/>
-                                <text className="ContentsDescTextArea">(<u>4번 출구 방향</u>(도보 3분)<br/></text>
+                                <text className="ContentsDescTextArea"><u>4번 출구 방향</u>(도보 3분)<br/></text>
                             </text>
                         <br/><br/>
                         </ScrollAnimation>
@@ -451,7 +451,7 @@ function App() {
                         </ScrollAnimation>
                         <ScrollAnimation animateIn="fadeInUp" animateOnce={true}>
                         <text className="TransportationType">자 가 용 (주 차)</text><br/>
-                            <text className="ContentsTextArea">네이게이셔션 [서울 영등포구 당산동 3가 93-2]검색 </text><br/>
+                            <text className="ContentsTextArea">네비게이션 [서울 영등포구 당산동 3가 93-2]검색 </text><br/>
                             <text className="ContentsTextArea">웨딩홀 지하 주차장 1, 2층 </text><br/>
                             <text className="ContentsDescTextArea">웨딩홀 맞은편 공영주차장 이용 가능</text>
                         <br/><br/><br/>

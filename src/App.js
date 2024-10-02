@@ -9,7 +9,7 @@ import Snowfall from 'react-snowfall';
 
 
 function App() {
-    const totalImg = 15;
+    const totalImg = 14;
     const SeungHoonAccountNum = "신한 110-328-002457";
     const SeungHoonDadAccountNum = "농협 356-1153-0768-83";
     const SeungHoonMonAccountNum ="농협 970120-39790"

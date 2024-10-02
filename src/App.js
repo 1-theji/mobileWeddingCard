@@ -102,7 +102,7 @@ function App() {
         let newSelectedImg = imageId;
 
         if (imageId < 1) {
-            selectedImg = totalImg;
+            newSelectedImg = totalImg;
         } else if (imageId > totalImg) {
             newSelectedImg  = 1;
         }

@@ -101,7 +101,7 @@ function App() {
     function openImage(imageId) {
         let newSelectedImg = imageId;
 
-        if (imageId < 1) {
+        if (imageId <= 1) {
             selectedImg = totalImg;
         } else if (imageId > totalImg) {
             newSelectedImg  = 1;
